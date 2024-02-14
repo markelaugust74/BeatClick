@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatClick</title>
+</head>
+    <h1>Beat-Click</h1>
+<body>
+
+
+</body>
+
+<div class="big-square">
+    <button id="1"></button>
+    <button id="2"></button>
+    <button id="3"></button>
+    <button id="4"></button>
+    <button id="5"></button>
+    <button id="6"></button>
+    <button id="7"></button>
+    <button id="8"></button>
+    <button id="9"></button>
+</div>
+
+<script>
+    var currentAudio = null; // Variable to store the currently playing audio
+
+    // Add event listeners to each button
+    document.getElementById("1").addEventListener("click", function() {
+        playSound("Sounds/1.wav");
+    });
+
+    document.getElementById("2").addEventListener("click", function() {
+        playSound("Sounds/2.wav");
+    });
+
+    document.getElementById("3").addEventListener("click", function() {
+        playSound("Sounds/3.wav");
+    });
+
+    document.getElementById("4").addEventListener("click", function() {
+        playSound("Sounds/4.wav");
+    });
+
+    document.getElementById("5").addEventListener("click", function() {
+        playSound("Sounds/5.wav");
+    });
+
+    document.getElementById("6").addEventListener("click", function() {
+        playSound("Sounds/6.wav");
+    });
+
+    document.getElementById("7").addEventListener("click", function() {
+        playSound("Sounds/7.wav");
+    });
+
+    document.getElementById("8").addEventListener("click", function() {
+        playSound("Sounds/8.wav");
+    });
+
+    document.getElementById("9").addEventListener("click", function() {
+        playSound("Sounds/9.wav");
+    });
+
+    // Function to play the sound
+    function playSound(soundFile) {
+        if (currentAudio) {
+            currentAudio.pause(); // Pause the currently playing audio
+        }
+        var audio = new Audio(soundFile);
+        audio.play();
+        currentAudio = audio; // Update the currently playing audio
+    }
+
+    
+</script>
+
+</html>

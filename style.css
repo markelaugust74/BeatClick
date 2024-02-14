@@ -1,0 +1,99 @@
+body {
+    background-image: url("/Gifs/cool-animated-gif-08.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333030;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: contain;
+    display: block;
+}
+
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.big-square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 324px;
+    height: 325px;
+    background-color: #070707;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 0 10px 5px #000000;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    top: 12px;
+    left: 7px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #e4b5b5;
+    border: black 2px solid;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    animation: hoverAnimation 0.5s infinite alternate;
+}
+
+@keyframes hoverAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+button:nth-child(1) {
+    background-color: #00ff00;
+}
+button:nth-child(2) {
+    background-color: #ff5b5b;
+}
+button:nth-child(3) {
+    background-color: hwb(240 55% 0%);
+}
+button:nth-child(4) {
+    background-color: #ffff00;
+}
+button:nth-child(5) {
+    background-color: #ff00ff;
+}
+button:nth-child(6) {
+    background-color: #00ffff;
+}
+button:nth-child(7) {
+    background-color: #c300ff;
+}
+button:nth-child(8) {
+    background-color: #ff8c00;
+}
+button:nth-child(9) {
+    background-color: #d8f3c2;
+}
